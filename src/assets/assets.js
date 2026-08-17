@@ -4,10 +4,6 @@ import group_profile from './group_profile.png'
 import bgImage1 from './bgImage1.png'
 import bgImage2 from './bgImage2.png'
 import hero_img from './hero_img.png'
-import microsoft_logo from './microsoft_logo.png'
-import zoom_logo from './zoom_logo.png'
-import rakuten_logo from './rakuten_logo.png'
-import coinbase_logo from './coinbase_logo.png'
 import ads_icon from './ads_icon.svg'
 import content_icon from './content_icon.svg'
 import marketing_icon from './marketing_icon.svg'
@@ -24,8 +20,6 @@ import twitter_icon from './twitter_icon.svg'
 import instagram_icon from './instagram_icon.svg'
 import linkedin_icon from './linkedin_icon.svg'
 import logo_dark from './logo_dark.svg'
-import airbnb_logo from './airbnb_logo.svg'
-import google_logo from './google_logo.svg'
 import menu_icon_dark from './menu_icon_dark.svg'
 import sun_icon from './sun_icon.svg'
 import moon_icon from './moon_icon.svg'
@@ -34,14 +28,20 @@ import logo1 from './logo1.svg'
 import logo2 from './logo2.svg'
 import edu_logo from './edu_logo.svg'
 import edu_logo_icon from './edu_logo_icon.svg'
+import platinum_logo from './platinum_logo.svg'
+import absa_logo from './absa_logo.svg'
+import bella_logo from './bella_logo.svg'
+import funky_logo from './funky_logo.svg'
+import impertimus_logo from './impertimus_logo.svg'
+import mandag_logo from './mandag_logo.svg'
 
 export const company_logos = [
-  microsoft_logo,
-  zoom_logo,
-  rakuten_logo,
-  coinbase_logo,
-  airbnb_logo,
-  google_logo,
+  platinum_logo,
+  absa_logo,
+  bella_logo,
+  funky_logo,
+  impertimus_logo,
+  mandag_logo,
 ]
 
 const assets = {
