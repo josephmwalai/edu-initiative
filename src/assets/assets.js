@@ -26,14 +26,14 @@ import moon_icon from './moon_icon.svg'
 import edu_icon from './edu_icon.svg'
 import logo1 from './logo1.svg'
 import logo2 from './logo2.svg'
-import edu_logo from './edu_logo.svg'
-import edu_logo_icon from './edu_logo_icon.svg'
 import platinum_logo from './platinum_logo.svg'
 import absa_logo from './absa_logo.svg'
 import bella_logo from './bella_logo.svg'
 import funky_logo from './funky_logo.svg'
 import impertimus_logo from './impertimus_logo.svg'
 import mandag_logo from './mandag_logo.svg'
+import phone_icon from './phone_icon.svg'
+import edu_ico from './edu_ico.svg'
 
 export const company_logos = [
   platinum_logo,
@@ -73,8 +73,8 @@ const assets = {
   edu_icon,
   logo1,
   logo2,
-  edu_logo,
-  edu_logo_icon,
+  phone_icon,
+  edu_ico,
 }
 
 export default assets
@@ -82,9 +82,9 @@ export default assets
 export const teamData = [
   { name: 'Mwende Mutinda', title: 'Co-Founder & Executive Director', image: 'https://randomuser.me/api/portraits/women/12.jpg' },
   { name: 'Judith Oremo', title: 'Co-Founder & Director', image: 'https://randomuser.me/api/portraits/women/11.jpg' },
-  { name: 'Juliet Ochieng', title: 'Program Manager & Content marketer ', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop' },
+  { name: 'Juliet Ochieng', title: 'Program Manager & Content marketer ', image: '/images/team/juliet-ochieng.jpeg' },
   { name: 'Waithera Karanja', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/10.jpg' },
   { name: 'William Mwema', title: 'ICT officer', image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200' },
-  { name: 'Joseph Mwalai', title: 'Volunteer Web Developer', image: 'https://randomuser.me/api/portraits/men/9.jpg' },
+  { name: 'Joseph Mwalai', title: 'Volunteer Web Developer', image: '/images/team/joseph-mwalai.JPG' },
   { name: 'Haggai Okumu', title: 'Marketing & sales', image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200' },
 ]

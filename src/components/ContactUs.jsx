@@ -46,6 +46,13 @@ const ContactUs = () => {
                     <input name="name" type="text" placeholder="Enter your name*" className='w-full p-3 text-sm outline-none' required/>
                 </div>
             </div>
+             <div>
+                <p className='mb-2 text-sm font-medium'>Phone Number</p>
+                <div className='flex pl-3 rounded-lg border border-gray-300 dark:border-r-gray-600'>
+                    <img src={assets.phone_icon} alt="" className='w-5 h-5 object-contain'/>
+                    <input name="phone" type="text" placeholder="Enter your whatsapp number*" className='w-full p-3 text-sm outline-none' required/>
+                </div>
+            </div>
             
             <div>
                 <p className='mb-2 text-sm font-medium'>Email id</p>
