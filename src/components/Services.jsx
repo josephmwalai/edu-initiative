@@ -1,56 +1,109 @@
+
 import React from 'react'
 import Title from './Title'
 import assets from '../assets/assets'
 import ServiceCard from './ServiceCard'
+import { motion } from "motion/react"
+
+const containerVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.15
+        }
+    }
+};
 
 const Services = () => {
 
     const servicesData = [
         {
-            title: 'Advertising',
-            description: 'We help you reach your target audience through effective advertising strategies.',
-            icon: assets.ads_icon
+            title: 'Individual Supporters',
+            description: [
+                'Monthly giving programs that provide steady support',
+                'Sponsor a student’s full educational journey',
+                'Fund specific programs like mentorship or wellness',
+                'Donate your professional skills and expertise'
+            ],
+            icon: assets.individual
         },
         {
-            title: 'Content Marketing',
-            description: 'We help you promote your products and services effectively.',
-            icon: assets.marketing_icon
+            title: 'Corporate Partners',
+            description: [
+                'Employee volunteer programs and team building',
+                'Skills-based volunteering in your area of expertise',
+                'Sponsored programs with your company’s name',
+                'Joint community events and initiatives'
+            ],
+            icon: assets.cooperate
         },
         {
-            title: 'Website Development',
-            description: 'We help you create a professional and functional website that represents your brand.',
-            icon: assets.content_icon
+            title: 'Educational Institutions',
+            description: [
+                'Support a student’s education through full or partial sponsorship',
+                'Partner with us on school events, forums, or creative workshops',
+                'Share your skills: mentorship, mental health, media, or education',
+                'Collaborate on parent empowerment or community outreach sessions'
+            ],
+            icon: assets.university
         },
         {
-            title: 'Social Media Management',
-            description: 'We help you manage your social media presence and engage with your audience effectively.',
-            icon: assets.social_icon
+            title: 'Community Organizations',
+            description: [
+                'Joint programming and resource sharing',
+                'Referral networks for students and families',
+                'Collaborative grant applications and funding',
+                'Shared best practices and learning exchanges'
+            ],
+            icon: assets.community_icon
         },
-    ]
+    ];
 
     return (
-        <div 
-            id='services' 
+        <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.05 }}
+            id='services'
             className='relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white'
         >
-            <img 
-                src={assets.bgImage2} 
-                alt="" 
+            <img
+                src={assets.bgImage2}
+                alt=""
                 className='absolute -top-110 -left-70 -z-1 dark:hidden'
             />
 
-            <Title 
-                title='How can we help?' 
-                desc='We offer a wide range of services to help you achieve your business goals. Our team of experts is dedicated to providing you with the best solutions for your needs.'
+            <Title
+                title="Ways to Partner With Us"
+                desc="Whether you’re an individual, business, school, or organization, you can help make education accessible and transform lives. Partner with Edu Initiative Kenya to empower young people, strengthen families, and build thriving communities."
             />
 
-            <div className='flex flex-col md:grid grid-cols-2'>
-                {servicesData.map((service, index)=>(
-                    <ServiceCard key={index} service={service} index={index} />
+            <div className="mt-6 text-center">
+                <p className="text-lg font-semibold">
+                    Together, We Can Shape Brighter Futures
+                </p>
+
+                <p className="mt-2 text-gray-600 dark:text-gray-300">
+                    Be the reason a brighter future begins. Join our mission today
+                    and turn your commitment into lasting impact.
+                </p>
+            </div>
+
+            <div className='grid w-full grid-cols-1 gap-6 md:grid-cols-2'>
+                {servicesData.map((service, index) => (
+                    <ServiceCard
+                        key={index}
+                        service={service}
+                        index={index}
+                    />
                 ))}
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 

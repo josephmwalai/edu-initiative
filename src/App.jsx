@@ -89,10 +89,9 @@ useEffect(() => {
         <Footer theme={theme} />
 
         {/* Custom Cursor Ring*/}
-        <div ref={outlineRef} className='fixed top-0 left-0 h-8 w-8 rounded-full border border-primary pointer-events-none z-[9999]'>
-
-        </div>
+        <div ref={outlineRef} className='fixed top-0 left-0 h-8 w-8 rounded-full border border-primary pointer-events-none z-[9999]' style={{transition: 'transform 0.1s ease-out'}}></div>
         {/* Custom Cursor Dot */}
+
         <div ref={dotRef} className='fixed top-0 left-0 h-2 w-2 rounded-full bg-primary pointer-events-none z-[9999]'>
 
         </div>

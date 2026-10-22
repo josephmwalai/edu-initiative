@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import assets from "../assets/assets";
 import ThemetoggleBtn from "./ThemetoggleBtn";
+import { motion } from "motion/react"
 
 const Navbar = ({ theme, setTheme }) => {
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
 
   return (
-    <div className="flex justify-between items-center px-4 sm:px-12 lg:px24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70">
+    <motion.div
+    initial={{ y: -50, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.6, ease: "easeOut" }}
+     className="flex justify-between items-center px-4 sm:px-12 lg:px24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70">
       <a
         href="#"
         onClick={e => {
@@ -91,7 +96,7 @@ const Navbar = ({ theme, setTheme }) => {
           />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

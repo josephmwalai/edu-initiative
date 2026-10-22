@@ -34,6 +34,11 @@ import impertimus_logo from './impertimus_logo.svg'
 import mandag_logo from './mandag_logo.svg'
 import phone_icon from './phone_icon.svg'
 import edu_ico from './edu_ico.svg'
+import community_icon from './community_icon.svg'
+import university from './university.svg'
+import cooperate from './cooperate.svg'
+import individual from './individual.svg'
+
 
 export const company_logos = [
   platinum_logo,
@@ -75,6 +80,10 @@ const assets = {
   logo2,
   phone_icon,
   edu_ico,
+  community_icon,
+  university,
+  cooperate,
+  individual,
 }
 
 export default assets
